@@ -67,7 +67,7 @@
 </head>
 
 
-<body>
+<body id="block">
 
 <!-- This section is for Splash Screen -->
 <div class="ole">
@@ -372,29 +372,20 @@
                         Earth
                     </li>
                 </ul>
-                <div class="container">
-        <div class="row">
-            <div class="span12">
                 <nav id="social">
-                    <ul>
-                        <li><a href="https://www.instagram.com/mophiephotography/" target="_blank"><span class="font-icon-social-photobucket"></span></a></li>
-                        <li><a href="https://www.facebook.com/nikhil.makode.5" target="_blank" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                        
-                    </ul>
-                </nav>
-            </div>
+                        <ul>
+                            <li><a href="https://www.instagram.com/mophiephotography/" target="_blank"><span class="font-icon-social-photobucket"></span></a></li>
+                            <li><a href="https://www.facebook.com/nikhil.makode.5" target="_blank" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                            
+                        </ul>
+                    </nav>
+           </div>    
         </div>
-    </div>
-            </div>
-        </div>
-    </div>
+
     <!-- End Contact Form -->
 </div>
 </div>
 <!-- End Contact Section -->
-
-
-
 
 <!-- Footer -->
 <footer>
@@ -422,6 +413,40 @@
 <script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="_include/js/main.js"></script> <!-- Default JS -->
 <!-- End Js -->
+<!-- <script type="text/javascript">$(document).ready(function() {
+    $("#block").on("contextmenu",function(){
+        var div = $("#popup");
+        $('#popup').fadeIn('slow').delay(2000).hide(0);
+  div.css( {
+
+      position:"absolute",
+      top:event.pageY, 
+      left: event.pageX});
+       return false;
+    }); 
+
+
+
+    
+}); 
+
+</script> -->
+<!-- <script type="text/javascript">
+
+$(document).ready(function() {
+    if (document.addEventListener) { // IE >= 9; other browsers
+        document.addEventListener('contextmenu', function(e) {
+            alert("You've tried to open context menu"); //here you draw your own menu
+            e.preventDefault();
+        }, false);
+    } else { // IE < 9
+        document.attachEvent('oncontextmenu', function() {
+            alert("You've tried to open context menu");
+            window.event.returnValue = false;
+        });
+    }
+});
+</script> -->
 
 </body>
 </html>
